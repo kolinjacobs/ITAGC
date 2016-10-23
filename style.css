@@ -1,0 +1,301 @@
+body{
+    margin: 0px auto;
+        background: url(images/full.jpg);
+    background-size: cover;
+}
+#logo{
+    transition: 1s all;
+    position: absolute;
+}
+#logo h1{
+    font-family: oswald;
+    margin-left: 20px;
+    min-width: 300px;
+    color:white;
+    display: inline-block;
+    overflow: hidden;
+}
+#logo h1 span{
+    font-family: oswald;
+    width: auto;
+    color:#d6c4c4;
+    font-size: 0px;
+    transition: 0.3s all;
+}
+#logo h1:hover span{
+    font-family: oswald;
+    width: auto;
+    color:#ffffff;
+    font-size: 70%;
+    transition: 0.3s all;
+}
+#fullPage{
+    height:100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+#text{
+    height: 100px;
+    top: 40%;
+    width: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    transition: 0.5s all;
+}
+#container{
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+}
+#dropDown{
+    height: 90px;
+    width: 39%;
+    float: left;
+
+}
+#text h1{
+    float: left;
+    height: 100px;
+    line-height: 100px;
+    color:white;
+    font-family: oswald;
+    font-size: 400%;
+    margin: 0px;
+    display: block;
+}
+#text input{
+    float: left;
+    height: 70px;
+    width: 100%;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(51, 51, 51, 0);
+    outline: none;
+    border: none;
+    border-bottom: 3px white solid;
+    font-family: oswald;
+    padding-top: 10px;
+}
+#list{
+    position: absolute; 
+    width: 40%;
+    margin-top: 100px;
+    transition: 1s all;
+    transform: translateY(-50%) scaleY(0);
+    z-index: 10;
+}
+#list a{
+   width: 95%;
+    float: left;
+    margin: 0px;
+    padding: 2.5% 0% 2.5% 5%;
+    color:white;
+    font-family: oswald;
+    text-decoration: none;
+    font-size: 120%;
+    background-color: rgba(78, 114, 112, 0.54);
+    transition: 0.3s all;
+    display: block;
+}
+#list a:hover{
+    background-color: rgba(36, 36, 36, 0.9);
+
+}
+#button{
+    float: left;
+    margin-top: 25px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #459b87;
+    text-align: center;
+    font-size: 200%;
+    font-family: oswald;
+    height: 50px;
+    margin-left:20px;
+    padding: 5px;
+    background-color: white;
+    width: 80px;
+    border-radius: 15px; 
+}
+#stats{
+    width: 70%;
+    height: 150vh;
+    margin-left: 15%;
+    background-color: white;
+    position: absolute;
+    border-radius: 15px;
+    margin-top: 100vh;
+    transition: 1s all;
+}
+#stats h1{
+    text-align: center;
+    font-family: oswald;
+    font-size: 500%;
+    color: #50a3a2;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+#stats p{
+    text-align: center;
+    font-family: oswald;
+    font-size: 250%;
+    color: #3c3c3c;
+    margin-top: 10px;
+    width:80%;
+    margin: auto;
+}
+#stats a{
+    display: block;
+    width: 20%;
+    text-align: center;
+    height: 10vh;
+    line-height: 10vh;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: #50a3a2;
+    font-family: oswald;
+    font-size: 200%;
+    margin:auto;
+    margin-top: 7vh;
+}
+
+#stats h2{
+    margin-left: 8%;
+    font-family: oswald;
+    font-size: 200%;
+    color: #313131;
+    margin-top: 10px;
+}
+#stats h2 span{
+
+    font-family: oswald;
+    color: #50a3a2;
+    margin-top: 10px;
+}
+#stats h3{
+
+    font-family: oswald;
+    color: #212121;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 250%;
+}
+.statContainer:nth-child(1){
+    height: 60vh;
+}
+.statContainer:nth-child(2){
+    height: 85vh;
+    margin-top: 5vh;
+}
+#backToTop{
+    position: fixed;
+    bottom: 0px;
+    display: block;
+    margin: auto;
+    color: white;
+    font-family: oswald;
+    margin-left: 50%;
+    width: 10%;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 100%;
+    text-align: center;
+    transform: translateX(-50%);
+    display: none;
+    
+}
+@media (max-width: 1024px){
+    #text{
+        width: 95%;
+    }    
+    #button{
+            width: 70px;
+    }
+    #text h1{
+        font-size: 300%;
+    }
+    #stats{
+        width: 90%;
+        margin-left: 5%;
+    }
+    #stats p{
+        width:90%;
+        font-size: 4vw;
+    }
+    #stats h1{
+        font-size: 12vw;
+        margin-bottom: 5px;
+    }
+    #stats h2{
+        font-size: 160%;
+    }
+    #stats a{
+        font-size: 150%;
+    }
+    
+}
+@media (max-width: 750px) 
+{
+    #text{
+        top:15%;
+    }    
+    #text h1{
+        font-size: 250%;
+    }
+    #stats{
+        width: 98%;
+        margin-left: 1%;
+    }
+    #stats p{
+        font-size: 200%;
+    }
+    #stats h1{
+        font-size: 350%;
+    }
+    #backToTop{
+        width: 20%;
+    }
+    #stats a{
+     width: 50%;   
+    }
+    #dropDown{
+     width:90%;   
+    }
+    #list{
+        width:90%;
+    }
+    #right{
+        width: 100%;
+        text-align: center;
+    }
+    #left{
+        width: 100%;
+        text-align: center
+    }
+    #button{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 0px;
+        width: 40%;
+    }
+    #container{
+    position: relative;
+    height: auto;
+    }
+    #dropDown{
+        margin-left: 5%;
+    }
+    #text input{
+     font-size: 200%;   
+    }
+}

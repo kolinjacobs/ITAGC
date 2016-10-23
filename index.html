@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+<meta content='width=device-width, initial-scale=1' name='viewport'/> 
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script  type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div id="fullPage">
+        <div id="logo">
+            <h1>I<span>s </span>T<span>his </span>A<span> </span>G<span>ood </span>C<span>areer</span>?</h1>
+        </div>
+        <div id="text">
+            <div id="container">
+                <h1 id="right">Is</h1>
+                <div id="dropDown">
+                    <input id="input" type="text">
+                    <div id="list">
+                        <a href="javascript:setText('0')">One</a>
+                        <a href="javascript:setText('1')">Two</a>
+                        <a href="javascript:setText('2')">Three</a>
+                        <a href="javascript:setText('3')">Four</a>
+                        <a href="javascript:setText('4')">Four</a>
+                    </div>
+                </div>
+                    <h1 id="left">a Good Career?</h1>
+                    <a id="button" href="javascript:slideUp()">GO</a>
+            </div>
+        </div>
+        <div id="stats">
+            <div class="statContainer">
+                <h1 id="yesOrNo">No</h1>
+                <p id="isOrisnt">Unfortunately <span class="jobName">job</span> is not a good career.</p>
+                <a href="javascript:slideUpTwo()">But Why?</a>
+                </div>
+            <div class="statContainer">
+                <h1 id="why">Here is why</h1>
+                <h3><span class="jobName">job</span></h3>
+                <h2>Median Pay:	<span id="pay">$60,000</span></h2>
+                <h2>Entry-Level Education: <span id="education">Bachelors Degree</span>
+    </h2>
+                <h2>Number of Jobs: <span id="jobs">21,300</span></h2>
+                <h2>Projected Job Growth: <span id="growth">4%</span></h2>
+            </div>
+        </div>
+        <a id="backToTop" href="javascript:slideDown()">Back To The Top</a>
+    </div>
+    
+    
+</body>
+</html>
